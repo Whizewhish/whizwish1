@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_to_store_item"
+                android:textSize="16sp"
+                android:fontFamily="@font/sunflowerlight"
+                android:textColor="#000"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/my_wishlist"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:background="@drawable/custom_store_dialog_selected_btn"
+                    android:fontFamily="@font/sunflowerlight"
+                    android:textColor="@color/white"
+                    android:id="@+id/mywishlist"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/friend_s_wish_bord"
+                    android:fontFamily="@font/sunflowerlight"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/friendwish"
+                    android:background="@drawable/custom_store_dialog_unselected_btn"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:id="@+id/myWishList"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/post3"
+                    android:id="@+id/store_item_image"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 170"
+                    android:textColor="#000"
+                    android:id="@+id/store_item_cost"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sunflowerlight"
+                    android:layout_gravity="start"
+                    android:padding="5dp"
+
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Womens adisda shoes originaljlkdf kljhfg shoes"
+                    android:fontFamily="@font/sunflowerlight"
+                    android:textColor="#000"
+                    android:id="@+id/store_item_title"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="start"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_borders_color"
+                    android:text="www.adidas.com"
+                    android:fontFamily="@font/sunflowerlight"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Is This a Private Post ?"
+                        android:fontFamily="@font/sunflowerlight"
+                        android:textColor="#000"
+
+                        android:layout_marginEnd="10dp"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"/>
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/turnOnOff"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        app:colorBorder="#fff"
+                        app:sb_checked="true"
+                        app:sb_show_indicator="false"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_lock"
+                        />
+                    <TextView
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/your_post_is_privte_it_will_be_visible_to_the_selected_users"
+                        android:maxLines="2"
+                        android:id="@+id/privateSwitchText"
+                        android:layout_gravity="center"
+                        android:textSize="11sp"
+
+                        android:fontFamily="@font/sunflowerlight"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/recyclerContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send To"
+                        android:fontFamily="@font/sunflowerlight"
+                        android:layout_gravity="center"
+                        android:textAllCaps="true"
+                        android:textSize="12sp"
+                        android:id="@+id/aboveRecyclerText"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/select_users"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_follow"
+                        android:text="@string/cancel"
+                        android:textColor="@color/text_borders_color"
+                        android:textAllCaps="true"
+                        android:fontFamily="@font/sunflowerlight"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="12sp"
+                        android:id="@+id/cancel"
+
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_followed"
+                        android:text="@string/post"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/sunflowerlight"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="12sp"
+                        android:id="@+id/post"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

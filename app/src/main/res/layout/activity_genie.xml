@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.GenieActivity"
+   >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat">
+
+        <include layout="@layout/toolbar" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/dropshadow"
+            android:id="@+id/shadow"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:onClick="openStores"
+            android:src="@drawable/ic_action_search" />
+
+        <ImageView
+            android:id="@+id/gift"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:onClick="openGifts"
+            android:src="@drawable/ic_action_gifts" />
+
+        <ImageView
+            android:id="@+id/genie"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/geniee" />
+
+        <ImageView
+            android:id="@+id/alert"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_alerts"
+            android:onClick="showAlerts"/>
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_profile"
+            android:onClick="openProfile"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp">
+
+            <LinearLayout
+                android:onClick="openStores"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/add_new_wish" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Wish"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/sunflowermedium"
+                    android:textColor="#00a6ff"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/nike"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/puma"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/hm"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="3.5"
+            >
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:rowCount="3"
+                app:columnCount="2"
+
+                android:id="@+id/grid"
+                android:background="#00a6ff"
+                android:textSize="12sp"
+
+                >
+
+                <LinearLayout
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="0.02dp"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:background="#fff"
+                    android:gravity="center_vertical|center_horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/chat"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHAT"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#00a6ff"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/sunflowermedium"
+
+
+                        android:layout_marginTop="8dp"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginStart="0.02dp"
+                    android:layout_marginBottom="0.02dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="#fff"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+
+                    android:gravity="center_vertical|center_horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/video"
+                        android:onClick="recordVideo"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIDEO"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#00a6ff"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/sunflowermedium"
+
+
+                        android:layout_marginTop="8dp"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="0.02dp"
+
+                    android:background="#fff"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:onClick="openCamera"
+                    android:gravity="center_vertical|center_horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/camera"
+                        android:id="@+id/camera"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CAMERA"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#00a6ff"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/sunflowermedium"
+
+
+                        android:layout_marginTop="8dp"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginStart="0.02dp"
+                    android:layout_marginBottom="0.02dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="#fff"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/photo"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LIBRARY"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#00a6ff"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/sunflowermedium"
+
+
+                        android:layout_marginTop="8dp"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginStart="0dp"
+
+
+                    android:background="#fff"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                   android:onClick="openRecord"
+                    >
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/audio"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AUDIO"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#00a6ff"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/sunflowermedium"
+                        android:layout_marginTop="8dp"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginStart="0.02dp"
+
+                    android:layout_marginEnd="0dp"
+                    android:background="#fff"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/text"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TEXT"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#00a6ff"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/sunflowermedium"
+
+
+                        android:layout_marginTop="8dp"
+                        />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.GridLayout>
+
+            <!--<android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"/>-->
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

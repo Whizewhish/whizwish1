@@ -1,0 +1,46 @@
+<android.support.design.widget.CollapsingToolbarLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+    app:contentScrim="@color/colorPrimary"
+    app:expandedTitleMarginStart="48dp"
+    app:expandedTitleMarginEnd="64dp"
+    android:fitsSystemWindows="true"
+    >
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/dogBlurImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:radius="20"
+        android:scaleType="fitXY"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/post2" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:layout_margin="0dp"
+
+        >
+
+
+
+
+
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+</android.support.design.widget.CollapsingToolbarLayout>

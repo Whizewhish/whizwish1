@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="switch_tabs">
+        <item>Memories (158)</item>
+        <item>WishList (423)</item>
+        <item>Wish Board (123)</item>
+    </string-array>
+    <string-array name="switch_country">
+        <item>World</item>
+        <item>China</item>
+
+    </string-array>
+</resources>

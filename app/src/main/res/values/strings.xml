@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">WhizWish</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_followers">FollowersActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_whats_on">WhatsOnActivity</string>
+    <string name="public_post_switch_text">Your post is public it will be visible to all your followers and to everyone if your account is not private</string>
+    <string name="private_selected_users">Your post is private it will be visible to the selected users</string>
+
+    <string name="GOOGLE_API_KEY">AIzaSyCd77un8g3sm3UZmR0uuyxWvL5db18hdcY</string>
+    <string name="add_to_store_item">Add to:</string>
+    <string name="my_wishlist">My Wishlist</string>
+    <string name="friend_s_wish_bord">Friend\'s Wish bord</string>
+    <string name="your_post_is_privte_only_the_selected_followers_can_see_it">Your post is privte only the selected followers can see it</string>
+    <string name="your_post_is_public_it_will_be_visible_to_all_your_followers_and_to_everyone_if_your_account_is_not_privte">Your post is public it will be visible to all your followers and to everyone if your account is not privte</string>
+    <string name="your_post_is_privte_it_will_be_visible_to_the_selected_users">Your Post is privte it will be visible to the selected users</string>
+    <string name="cancel">Cancel</string>
+    <string name="post">Post</string>
+    <string name="add_people_who_can_see_this_post">Add People Who can see this post</string>
+    <string name="send_to">Send To</string>
+    <string name="action_search">search</string>
+    <string name="Stores">Stores</string>
+    <string name="featured">Featured</string>
+    <string name="viewed">Viewed</string>
+    <string name="general">General</string>
+    <string name="getting_stores">Getting Stores</string>
+    <string name="buy">buy</string>
+    <string name="recieved_gift_text">your gift received </string>
+    <string name="unrecieved_gift_text">Gift is reserved hurry up and by it</string>
+    <string name="sharmoment">Share your moment</string>
+</resources>

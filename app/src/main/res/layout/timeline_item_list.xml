@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile7"
+                android:id="@+id/userImage"
+                android:layout_gravity="center"
+
+                />
+
+
+            <LinearLayout
+                android:layout_marginStart="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patrecia wanger"
+                    android:fontFamily="@font/sunflowermedium"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:id="@+id/userName"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New York"
+                    android:id="@+id/userHome"
+                    android:fontFamily="@font/sunflowerlight"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32 minutes ago"
+                android:id="@+id/postTime"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_height="130dp"
+            android:layout_width="match_parent"
+            android:id="@+id/postImage"
+            android:src="@drawable/post5"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="5dip"
+            app:riv_border_width="0dp"
+            app:riv_border_color="#333333"
+            app:riv_mutate_background="false"
+            app:riv_tile_mode="clamp"
+            app:riv_oval="false" />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="lorem ipsum dolar amet"
+                android:layout_gravity="center"
+                android:textColor="#1f2036"
+                android:textSize="16sp"
+                android:id="@+id/postTitle"
+                android:fontFamily="@font/sunflowermedium"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/like"
+                android:src="@drawable/ic_action_liked"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment"
+                android:src="@drawable/ic_action_comment"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/share"
+                android:src="@drawable/ic_action_share"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postContent"
+            android:textSize="14sp"
+            android:maxLines="3"
+            android:padding="3dp"
+            android:textColor="#000"
+            android:text="lorem ipsum dolar amet lorem ipsum dolar amet lorem ipsum dolar amet lorem ipsum dolar amet lorem ipsum dolar amet lorem ipsum dolar amet lorem ipsum dolar amet
+"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewComments"
+            android:text="View all 26 comments"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

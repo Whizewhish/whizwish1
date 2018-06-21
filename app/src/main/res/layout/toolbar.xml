@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:layout_margin="0dp"
+
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Timeline"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/sunflowermedium"
+        android:id="@+id/timeline"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sunflowermedium"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="WhizWish"
+        android:textColor="@android:color/black"
+
+
+        android:textSize="25sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Whta's On"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/sunflowermedium"
+        android:id="@+id/whatsOn"
+        />
+
+
+
+
+
+
+
+</android.support.v7.widget.Toolbar>
